@@ -21,11 +21,7 @@
                     <th scope="row">{{ $branch->id }}</th>
                     <td>{{ $branch->name  }}</td>
                     <td>
-                        <form>
-                            {{ csrf_field() }}
-                            <input type="hidden" name="_id" value="{{ $branch->id }}">
-                            <button type="submit" class="btn btn-primary">Подробнее</button>
-                        </form>
+                        <a class="btn btn-primary" href="/branch/detailed/{{ $branch->id }}">Подробнее</a>
                     </td>
                 </tr>
             @empty

@@ -22,13 +22,22 @@ class BranchController extends Controller
     public function postAdd(Request $request)
     {
         $this->validate($request, [
-            'name' => 'required|min:4',
+            'name' => 'required|min:4|max:256',
+            'description' => 'required|min:4|max:1024',
         ]);
 
         $branch = new Branch();
         $branch->name = $request->name;
+        $branch->description = $request->description;
         $branch->save();
 
         return redirect('/branches')->with('success', 'Запись успешно добавлена!');
+    }
+
+    public function viewDetailed($id)
+    {
+        return view('branch.detailed', [
+            'branch' => Branch::where('id', $id)->get()[0],
+        ]);
     }
 }

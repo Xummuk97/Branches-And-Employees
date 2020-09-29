@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="052ab6e2-755c-4449-8e43-05c0d96a1548" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/branch/detailed.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BranchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BranchController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Branch.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Branch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_130007_create_branches_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_29_130007_create_branches_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_130115_create_employees_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_29_130115_create_employees_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/branch/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/branch/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/branch/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/branch/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +188,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601374396514</updated>
-      <workItem from="1601374401019" duration="13179000" />
+      <workItem from="1601374401019" duration="15007000" />
     </task>
     <servers />
   </component>
@@ -189,5 +197,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1601404426794">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1601404426794" />
   </component>
 </project>

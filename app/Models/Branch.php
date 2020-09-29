@@ -9,7 +9,7 @@ class Branch extends Model
 {
     use HasFactory;
 
-    public function users()
+    public function employees()
     {
         return $this->hasMany(Employee::class);
     }
