@@ -3,9 +3,10 @@
 @section('page_title', 'Филиалы')
 
 @section('content')
-    <button type="button" class="btn btn-success">Добавить филиал</button>
+    <a class="btn btn-success" href="/branch/add">Добавить филиал</a>
 
     <h2>Список филиалов</h2>
+
     <table class="table">
         <thead>
         <tr>
@@ -15,15 +16,21 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Разработка сайтов</td>
-            <td>
-                <form>
-                    <button type="submit" class="btn btn-primary">Подробнее</button>
-                </form>
-            </td>
-        </tr>
+            <tr>
+                @forelse ($branches as $branch)
+                        <th scope="row">{{ $branch->id }}</th>
+                        <td>{{ $branch->name  }}</td>
+                        <td>
+                            <form>
+                                {{ csrf_field() }}
+                                <input type="hidden" name="_id" value="{{ $branch->id }}">
+                                <button type="submit" class="btn btn-primary">Подробнее</button>
+                            </form>
+                        </td>
+                @empty
+                    <td colspan="3">Филиалов нет!</td>
+                @endforelse
+            </tr>
         </tbody>
     </table>
 @endsection
