@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+use App\Http\Controllers\BranchController;
+use App\Http\Controllers\EmployeeController;
+
+Route::get('/', function ()
+{
+   return view('index');
 });
+
+Route::get('/branches', [ BranchController::class, 'index' ]);
+Route::get('/branch/add', [ BranchController::class, 'viewAdd' ]);
+Route::post('/branch/add', [ BranchController::class, 'postAdd' ]);
