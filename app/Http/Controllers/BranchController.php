@@ -16,7 +16,7 @@ class BranchController extends Controller
 
     public function viewAdd()
     {
-        return view('branch.create');
+        return view('branch.add');
     }
 
     public function postAdd(Request $request)
