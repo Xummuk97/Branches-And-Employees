@@ -45,6 +45,7 @@ class BranchController extends Controller
 
         return view('branch.detailed', [
             'branch' => $branchArr[0],
+            'employees' => $branchArr[0]->employees()->orderBy('name')->orderBy('surname')->orderBy('status')->get()
         ]);
     }
 }

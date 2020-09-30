@@ -24,7 +24,7 @@
         </tr>
         </thead>
         <tbody>
-        @forelse ($branch->employees as $employee)
+        @forelse ($employees as $employee)
             <tr>
                 <th scope="row">{{ $employee->id }}</th>
                 <td>{{ $employee->name  }}</td>
