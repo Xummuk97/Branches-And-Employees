@@ -25,3 +25,6 @@ Route::get('/branches', [ BranchController::class, 'index' ]);
 Route::get('/branch/add', [ BranchController::class, 'viewAdd' ]);
 Route::post('/branch/add', [ BranchController::class, 'postAdd' ]);
 Route::get('/branch/detailed/{id}', [ BranchController::class, 'viewDetailed' ]);
+
+Route::get('/{branchId}/employee/add', [ EmployeeController::class, 'viewAdd' ]);
+Route::post('/employee/add', [ EmployeeController::class, 'postAdd' ]);

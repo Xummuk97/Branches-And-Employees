@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('page_title', 'Подробнее и филиале')
+@section('page_title', 'Подробнее о филиале')
 
 @section('content')
 
@@ -12,7 +12,7 @@
 
     <h2>Список сотрудников</h2>
     <hr>
-    <a class="btn btn-success" href="/branch/add">Добавить сотрудника</a>
+    <a class="btn btn-success" href="/{{ $branch->id }}/employee/add">Добавить сотрудника</a>
 
     <table class="table">
         <thead>
@@ -24,7 +24,7 @@
         </tr>
         </thead>
         <tbody>
-        @forelse ($branch->employees() as $employee)
+        @forelse ($branch->employees as $employee)
             <tr>
                 <th scope="row">{{ $employee->id }}</th>
                 <td>{{ $employee->name  }}</td>
