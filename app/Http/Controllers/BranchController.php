@@ -36,8 +36,15 @@ class BranchController extends Controller
 
     public function viewDetailed($id)
     {
+        $branchArr = Branch::where('id', $id)->get();
+
+        if (count($branchArr) != 1)
+        {
+            return redirect('/branches')->withErrors('Не существует филиала по данному индексу');
+        }
+
         return view('branch.detailed', [
-            'branch' => Branch::where('id', $id)->get()[0],
+            'branch' => $branchArr[0],
         ]);
     }
 }
